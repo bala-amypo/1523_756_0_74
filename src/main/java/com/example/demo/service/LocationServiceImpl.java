@@ -9,18 +9,18 @@ import com.example.demo.entity.LocationEntity;
 import com.example.demo.repository.LocationRepository;
 
 @Service
-public class LocationServiceImpl implements LocationService{ 
-@Autowired 
-LocationRepository locationrepo;
+public class LocationServiceImpl implements LocationService{
+    @Autowired
+    LocationRepository locationrepo;
 
-@Override
-public LocationEntity createLocation(LocationEntity le) {
-      return locationrepo.save(le);
-}
-   
-@Override
-public List<LocationEntity> getallocation() {
-    return locationrepo.findAll();          
-}
-}
+    @Override
+    public LocationEntity createlocation(LocationEntity location) {
+        return locationrepo.save(location); 
+    }
 
+    @Override
+    public List<LocationEntity> getalllocation() {
+        return locationrepo.findAll();
+    }
+    
+}

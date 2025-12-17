@@ -4,8 +4,7 @@ import java.util.List;
 
 import com.example.demo.entity.LocationEntity;
 
-public interface LocationService{
-       LocationEntity createLocation(LocationEntity location);
-       List<LocationEntity> getallocation();
-       
-    }
+public interface LocationService {
+    LocationEntity createlocation(LocationEntity location);
+    List<LocationEntity> getalllocation();
+}
